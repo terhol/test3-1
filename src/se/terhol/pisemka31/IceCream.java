@@ -11,8 +11,8 @@ public class IceCream {
     private String nameEn;
 
     /**
-     * @param name Unique czech name
-     * @param name Unique english name
+     * @param nameCz Unique czech name
+     * @param nameEn Unique english name
      */
     public IceCream(String nameCz, String nameEn) {
         if (nameCz == null) {
