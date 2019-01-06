@@ -13,7 +13,7 @@ public class Demo {
     public static void main(String[] args) throws IOException, IceCreamException {
         Vendor vendor = new VendorImpl();
 
-        vendor.restock(new IceCream("cokoladova", "chocolade"), 20);
+        vendor.restock(new IceCream("cokoladova", "chocolate"), 20);
         vendor.restock(new IceCream("bananova", "banana"), 20);
         vendor.restock(new IceCream("jahodova", "strawberry"), 20);
         vendor.restock(new IceCream("rumova", "de luxe"), 10);

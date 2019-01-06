@@ -13,7 +13,7 @@ public class OutOfStockException extends IceCreamException {
     /**
      * Creates a new instance of <code>OutOfStockException</code> without detail message.
      *
-     * @param icecream  Ice cream.
+     * @param iceCream  Ice cream.
      * @param required  number of required pieces
      * @param available number of pieces available in the stock
      */

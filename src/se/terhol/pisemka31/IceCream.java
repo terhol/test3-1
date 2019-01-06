@@ -6,7 +6,7 @@ package se.terhol.pisemka31;
  * @author Radek Oslejsek
  * @version 2010-12-18
  */
-public class IceCream {
+public class IceCream implements Comparable {
     private String nameCz;
     private String nameEn;
 
@@ -26,14 +26,14 @@ public class IceCream {
     }
 
     /**
-     * @return Czech nameof ice-cream
+     * @return Czech name of ice-cream
      */
     public String getCzechName() {
         return nameCz;
     }
 
     /**
-     * @return English nameof ice-cream
+     * @return English name of ice-cream
      */
     public String getEnglishName() {
         return nameEn;
@@ -55,5 +55,10 @@ public class IceCream {
     @Override
     public int hashCode() {
         return this.nameCz.hashCode();
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.getCzechName().compareTo(((IceCream) o).getCzechName());
     }
 }

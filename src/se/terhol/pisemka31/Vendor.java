@@ -15,8 +15,8 @@ public interface Vendor {
      *
      * @param iceCream Ice cream to sell
      * @param required Number of required portions
-     * @throws IllegalArgumentException If the "required" paramater is <= 0
-     * @throws UnknownIcecreamException If this vendor does not sell this type of ice cream
+     * @throws IllegalArgumentException If the "required" parameter is <= 0
+     * @throws UnknownIceCreamException If this vendor does not sell this type of ice cream
      * @throws OutOfStockException      If there is not enough portions available
      */
     void sell(IceCream iceCream, int required) throws IceCreamException;
@@ -34,13 +34,13 @@ public interface Vendor {
 
     /**
      * Writes ice creams to given output stream as follow:
-     * 1. Data are writen in text mode.
+     * 1. Data are written in text mode.
      * 2. Each ice cream is written to a single line.
      * 3. Ice creams are written according to their natural ordering.
-     * 4. Each line consists of ice cream czech name, english name and number of potions
+     * 4. Each line consists of ice cream czech name, english name and number of portions
      * (in this order) separated by colon ':'.
      *
-     * @param OutputStream os
+     * @param os OutputStream
      * @throws IOException on I/O failure
      */
     void save(OutputStream os) throws IOException;
