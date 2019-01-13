@@ -10,7 +10,7 @@ public class UnknownIceCreamException extends IceCreamException {
     /**
      * Creates a new instance of <code>UnknownIceCreamException</code> without detail message.
      *
-     * @param icecream Ice cream.
+     * @param iceCream Ice cream.
      */
     public UnknownIceCreamException(IceCream iceCream) {
         super("Unknown ice cream ", iceCream);
